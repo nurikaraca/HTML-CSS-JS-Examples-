@@ -1,4 +1,3 @@
-// script.js
 function allowDrop(event) {
     event.preventDefault();
 }
@@ -9,12 +8,12 @@ function drag(event) {
 
 function drop(event) {
     event.preventDefault();
+    
     var data = event.dataTransfer.getData("text");
     var draggedElement = document.getElementById(data);
     var dropTarget = event.target;
 
-    if (dropTarget.tagName === "SPAN" && dropTarget.parentElement.className === "right") {
-        // Doğru cevabı kontrol et
+    if (dropTarget.tagName === "SPAN" && dropTarget.parentElement.className === "answers") {
         if ((data === "q1" && dropTarget.id === "a1") || 
             (data === "q2" && dropTarget.id === "a2") || 
             (data === "q3" && dropTarget.id === "a3")) {
@@ -43,13 +42,12 @@ function showArrow(draggedElement, dropTarget) {
     arrow.style.display = "flex";
 }
 
-// Drag and drop olaylarını başlat
-document.querySelectorAll(".left span").forEach(item => {
+document.querySelectorAll(".questions p").forEach(item => {
     item.setAttribute("draggable", "true");
     item.addEventListener("dragstart", drag);
 });
 
-document.querySelectorAll(".right span").forEach(item => {
+document.querySelectorAll(".answers span").forEach(item => {
     item.addEventListener("drop", drop);
     item.addEventListener("dragover", allowDrop);
 });

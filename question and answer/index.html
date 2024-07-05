@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="kutu1">
-        <div class="left">
-            <span class="top-left-corner" draggable="true" id="q1">Soru 1</span>
-            <span class="middle-left" draggable="true" id="q2">Soru 2</span>
-            <span class="bottom-left-corner" draggable="true" id="q3">Soru 3</span>
-        </div>
-     
-        <div class="right">
-            <span class="top-right-corner" id="a1" ondrop="drop(event)" ondragover="allowDrop(event)">Cevap 1</span>
-            <span class="middle-right" id="a2" ondrop="drop(event)" ondragover="allowDrop(event)">Cevap 2</span>
-            <span class="bottom-right-corner" id="a3" ondrop="drop(event)" ondragover="allowDrop(event)">Cevap 3</span>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Question And Answer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="questions">
+        <p class="question1" draggable="true" id="q1" ondragstart="drag(event)">
+          Türkiye'nin başkenti neresidir?
+        </p>
+        <p class="question2" draggable="true" id="q2" ondragstart="drag(event)">
+          2 + 2 işleminin sonucu kaçtır?
+        </p>
+        <p class="question3" draggable="true" id="q3" ondragstart="drag(event)">
+          React bir backend frameworküdür?
+        </p>
+      </div>
+      <div class="answers">
+        <span
+          class="answer1"
+          id="a1"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          >Ankara</span
+        >
+        <span
+          class="answer2"
+          id="a2"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          >4</span
+        >
+
+        <span
+          class="answer3"
+          id="a3"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          >Yanlış</span
+        >
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

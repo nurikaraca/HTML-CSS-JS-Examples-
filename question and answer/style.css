@@ -13,7 +13,7 @@ body {
   color: white;
 }
 
-.kutu1 {
+.container {
   background-color: rgb(26, 76, 110);
   width: 80%;
   height: 80%;
@@ -21,27 +21,23 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding: 20px;
 }
 
-.left, .right {
+.questions, .answers {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100%;
+  width: 45%;
 }
 
-.top-left-corner, .middle-left, .bottom-left-corner,
-.top-right-corner, .middle-right, .bottom-right-corner {
+.question1, .question2, .question3, 
+.answer1, .answer2, .answer3 {
   background-color: #572289;
-  padding: 7px;
+  padding: 10px;
   border-radius: 5px;
-}
-
-p {
-  font-size: 24px;
-  background-color: #572289;
-  border-radius: 5px;
-  padding: 8px;
+  text-align: center;
 }
 
 .arrow {

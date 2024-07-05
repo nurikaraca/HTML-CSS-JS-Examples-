@@ -6,3 +6,4 @@
 2: Question And Answer 
  
  ![Question And Answer ](images/qaa.png)
+ ![Question And Answer ](images/qaa2.png)
