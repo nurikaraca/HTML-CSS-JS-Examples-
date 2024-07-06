@@ -6,4 +6,10 @@
 2: Question And Answer 
  
  ![Question And Answer ](images/qaa.png)
+
  ![Question And Answer ](images/qaa2.png)
+
+
+ 3: Signpost
+ 
+ ![Question And Answer ](images/gereksizamaolsun.png)

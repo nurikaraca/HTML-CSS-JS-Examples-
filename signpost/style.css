@@ -51,25 +51,46 @@ body {
   justify-content: center;
   align-items: center;
 }
+.sign:nth-child(2)::before,
+.sign:nth-child(3)::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #ffcc00;
+    position: absolute;
+    left: -25px 
+}
 
+.sign:nth-child(4)::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #ffcc00;
+    position: absolute;
+    left: 102% 
+}
 .sign:nth-child(2) {
   top: 60px;
   left: -99px;
   transform-origin: right;
-  animation: wind 5s infinite;
+  animation: wind 5s infinite ease;
 }
 
 .sign:nth-child(3) {
   top: 170px;
   left: -99px;
   transform-origin: right;
-  animation: wind 5s infinite;
+  animation: wind 5s infinite ease;
 }
 .sign:nth-child(4) {
   top: 115px;
   right: -99px;
   transform-origin: left;
-  animation: wind 5s infinite reverse;
+  animation: wind 2s infinite ease-in-out;
 }
 
 @keyframes wind {
